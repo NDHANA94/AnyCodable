@@ -1,0 +1,2 @@
+# AnyCodable
+Swift AnyCodable package.
