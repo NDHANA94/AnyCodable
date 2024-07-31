@@ -186,7 +186,7 @@ public struct AnyCodable: Codable {
         case value
     }
 
-    public func getValue<T: Codable>(as type: T.Type) -> T? {
+    public func getValue<T>(as type: T.Type) -> T? {
         return value as? T
     }
 }
