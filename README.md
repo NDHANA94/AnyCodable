@@ -56,9 +56,10 @@ let encodedData = try JSONEncoder().encode(anyCodableString)
 let decodedAnyCodable = try JSONDecoder().decode(AnyCodable.self, from: encodedData)
 let decodedValue = decodedAnyCodable.getValue(as: String.self)
 print(decodedValue)  // Output: Optional("Hello, World!")
-Handling Different Types
-AnyCodable supports a wide range of types:
 ```
+
+### Handling Different Types
+AnyCodable supports a wide range of types:
 
 ```swift
 let dataValue = Data([0x01, 0x02, 0x03])
@@ -72,10 +73,10 @@ let anyCodableURL = AnyCodable(urlValue)
 let anyCodableDecimal = AnyCodable(decimalValue)
 
 // Encoding and decoding work similarly as shown above
-Testing
-AnyCodable comes with a suite of unit tests to ensure its reliability. You can run the tests using Xcode or via the command line:
 ```
 
+### Testing
+AnyCodable comes with a suite of unit tests to ensure its reliability. You can run the tests using Xcode or via the command line:
 ```bash
 swift test
 ```
